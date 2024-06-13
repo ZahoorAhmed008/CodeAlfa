@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Age Calculator</title>
+    
+</head>
+
+<link rel="stylesheet" href="./AgeCalculator.CSS">
+<script src="AgeCalculator.js"></script>
+
+<body>
+ 
+
+    <div class="container">
+        <div class="logo">
+            <img src="./ZahoorLogo.png" alt="Logo">
+        </div>
+        <h1>Age Calculator</h1>
+        <form id="ageCalculatorForm" onsubmit="calculateAge(event)">
+            <input type="number" id="day" placeholder="Day" required min="1" max="31">
+            <input type="number" id="month" placeholder="Month" required min="1" max="12">
+            <input type="number" id="year" placeholder="Year" required min="1900" max="2100">
+            <button type="submit">Calculate Age</button>
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+
+   
+</body>
+</html>
